@@ -1,0 +1,40 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--<beans xmlns="http://www.springframework.org/schema/beans"-->
+<!--       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
+<!--       xmlns:context="http://www.springframework.org/schema/context"-->
+<!--       xmlns:util="http://www.springframework.org/schema/util"-->
+<!--       xsi:schemaLocation="http://www.springframework.org/schema/beans-->
+<!--       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/util https://www.springframework.org/schema/util/spring-util.xsd">-->
+
+<!--&lt;!&ndash;    ########################    ANNOTATION CONFIGURATION    ############################&ndash;&gt;-->
+<!--    <context:component-scan base-package="com.springcore.springcore"/>-->
+
+
+
+<!--&lt;!&ndash;    ########################    ANNOTATION CONFIGURATION    ############################&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <context:property-placeholder location="musicPlayer.properties"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        &lt;!&ndash;    <context:property-placeholder location="classpath*:musicPlayer.properties"/>&ndash;&gt;&ndash;&gt;-->
+
+<!--&lt;!&ndash;    <bean id="musicRockBean" class="com.springcore.springcore.RockMusicImpl"&ndash;&gt;-->
+<!--&lt;!&ndash;    factory-method="getRockBean"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="musicPopBean" class="com.springcore.springcore.PopMusicImpl"&ndash;&gt;-->
+<!--&lt;!&ndash;          init-method="getInit" destroy-method="getDestroy"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="musicClassicBean" class="com.springcore.springcore.ClassicMusicImpl"/>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        &lt;!&ndash;        <constructor-arg value="Victor"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                        &lt;!&ndash;    </bean>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;    <util:list id="songList" value-type="com.springcore.springcore.Music">&ndash;&gt;-->
+<!--&lt;!&ndash;&lt;!&ndash;    <util:list id="songList" value-type="java.lang.String">&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <ref bean="musicRockBean"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ref bean="musicClassicBean"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <ref bean="musicPopBean"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </util:list>&ndash;&gt;-->
+<!--&lt;!&ndash;    <bean id="musicPlayer" class="com.springcore.springcore.MusicPlayer" scope="prototype">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        &lt;!&ndash;        <constructor-arg ref="musicBean"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;                                        &lt;!&ndash;        <property name="name" value="#{musicClassicBean.song}"/>&ndash;&gt;&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="name" value="${musicPlayer.name}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="music"  ref="musicRockBean"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="musicList" value="#{songList}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;        <property name="volume" value="${musicPlayer.volume}"/>&ndash;&gt;-->
+<!--&lt;!&ndash;    </bean>&ndash;&gt;-->
+<!--</beans>-->
